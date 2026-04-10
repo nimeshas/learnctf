@@ -12,7 +12,7 @@ function UpcomingPage() {
     // Requirement: React JSX - JSX layout for upcoming events page.
     <div className="page">
       <div className="hero">
-        <span className="chip">$ find /ctfs -type f | sort</span>
+        <span className="tag">$ find /ctfs -type f | sort</span>
         <h1 className="hero-title" style={{ fontSize: '56px', lineHeight: '56px', margin: '14px 0 8px' }}>
           $ ls upcoming_ctfs/
         </h1>

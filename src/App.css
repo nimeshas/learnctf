@@ -50,13 +50,6 @@
   margin-bottom: 12px;
 }
 
-.card-hover {
-  transition: border-color 0.15s ease;
-}
-
-.card-hover:hover {
-  border-color: var(--accent);
-}
 
 .card-head {
   background-color: #171c24;
@@ -119,16 +112,6 @@
 .hero {
   text-align: center;
   margin-bottom: 28px;
-}
-
-.chip {
-  display: inline-block;
-  padding: 8px 14px;
-  border: 1px solid var(--border-main);
-  border-radius: 10px;
-  color: var(--text-main);
-  background: #0b0d11;
-  font-family: 'JetBrains Mono', 'Cascadia Mono', 'SF Mono', 'Consolas', monospace;
 }
 
 .hero-title {

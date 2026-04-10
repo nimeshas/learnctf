@@ -27,7 +27,7 @@ function WriteupsPage() {
     // Requirement: React JSX - JSX layout for the writeups page.
     <div className="page">
       <div className="hero">
-        <span className="chip">$ find /writeups -type f | sort</span>
+        <span className="tag">$ find /writeups -type f | sort</span>
         <h1 className="hero-title" style={{ fontSize: '56px', lineHeight: '56px', margin: '14px 0 8px' }}>
           $ ls writeups/
         </h1>

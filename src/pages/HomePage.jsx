@@ -30,7 +30,7 @@ function HomePage() {
       </div>
 
       <div className="card-row">
-        <div className="card card-hover" style={{ width: '360px', textAlign: 'center' }}>
+        <div className="card" style={{ width: '360px', textAlign: 'center' }}>
           <div className="card-head">
             <h3 className="card-title">$ learn</h3>
           </div>
@@ -43,7 +43,7 @@ function HomePage() {
           </div>
         </div>
 
-        <div className="card card-hover" style={{ width: '360px', textAlign: 'center' }}>
+        <div className="card" style={{ width: '360px', textAlign: 'center' }}>
           <div className="card-head">
             <h3 className="card-title">$ writeups</h3>
           </div>
@@ -56,7 +56,7 @@ function HomePage() {
           </div>
         </div>
 
-        <div className="card card-hover" style={{ width: '360px', textAlign: 'center' }}>
+        <div className="card" style={{ width: '360px', textAlign: 'center' }}>
           <div className="card-head">
             <h3 className="card-title">$ upcoming</h3>
           </div>

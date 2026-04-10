@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom'
 // Requirement: React Components - navigation component reused across pages.
 function Navbar() {
   const navStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    textAlign: 'center',
     padding: '18px 24px',
     borderBottom: '1px solid var(--border-main)',
     backgroundColor: '#0a0c10',
@@ -21,8 +19,7 @@ function Navbar() {
   }
 
   const linksStyle = {
-    display: 'flex',
-    gap: '12px',
+    display: 'inline-block',
   }
 
   const linkStyle = {
@@ -31,6 +28,7 @@ function Navbar() {
     padding: '6px 8px',
     border: '1px solid var(--border-main)',
     borderRadius: '4px',
+    margin: '0 6px',
   }
 
   return (
