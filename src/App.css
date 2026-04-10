@@ -1,0 +1,157 @@
+.app {
+  min-height: 900px;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+.page {
+  width: 1220px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.card-row {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card-row .card {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 7px 14px;
+}
+
+.split {
+  text-align: center;
+}
+
+.split > * {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px;
+}
+
+.stat-row {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.stat-row > div {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 6px;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-main);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.card-hover {
+  transition: border-color 0.15s ease;
+}
+
+.card-hover:hover {
+  border-color: var(--accent);
+}
+
+.card-head {
+  background-color: #171c24;
+  border-bottom: 1px solid var(--border-main);
+  padding: 12px 16px;
+}
+
+.card-title {
+  margin: 0;
+  color: var(--text-header);
+  font-family: 'JetBrains Mono', 'Cascadia Mono', 'SF Mono', 'Consolas', monospace;
+}
+
+.card-body {
+  padding: 14px 16px 16px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: 1px solid var(--border-main);
+  border-radius: 4px;
+  background: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--accent);
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #050506;
+}
+
+.code-block {
+  background-color: #11141a;
+  border-top: 1px solid var(--border-main);
+  border-right: 1px solid var(--border-main);
+  border-bottom: 1px solid var(--border-main);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 12px;
+  overflow-x: auto;
+  color: var(--accent);
+}
+
+/* Requirement: Styling in React - these class selectors are applied via JSX className. */
+.title {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.chip {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid var(--border-main);
+  border-radius: 10px;
+  color: var(--text-main);
+  background: #0b0d11;
+  font-family: 'JetBrains Mono', 'Cascadia Mono', 'SF Mono', 'Consolas', monospace;
+}
+
+.hero-title {
+  margin: 0;
+  color: #f3f4f6;
+  font-family: 'JetBrains Mono', 'Cascadia Mono', 'SF Mono', 'Consolas', monospace;
+}
+
+.hero-text {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 18px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid var(--border-main);
+  border-radius: 10px;
+  color: #22c55e;
+  background: #0b0d11;
+  font-family: 'JetBrains Mono', 'Cascadia Mono', 'SF Mono', 'Consolas', monospace;
+}
+
+
+

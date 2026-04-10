@@ -1,0 +1,60 @@
+:root {
+  /* Color Code:
+     1) Neutrals: backgrounds, borders, default text.
+     2) Accent: single interactive/highlight color.
+     3) Danger: used only for high difficulty emphasis.
+  */
+  --bg-main: #050506;
+  --bg-card: #0f1115;
+  --bg-header: #2a3442;
+  --border-main: #3a3f46;
+  --text-main: #e6e8ee;
+  --text-muted: #a7adba;
+  --text-header: #ffffff;
+  --accent: #9db4d8;
+  --danger: #ff7d8a;
+}
+
+body {
+  /* Requirement: Styling in React - global styling used by JSX-rendered elements. */
+  background: var(--bg-main);
+  color: var(--text-main);
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+h1 {
+  /* Heading-only monospace per UI requirement. */
+  font-size: 23px;
+  font-family: 'JetBrains Mono', 'Cascadia Mono', 'SF Mono', 'Consolas', monospace;
+}
+
+h2 {
+  font-size: 19px;
+  font-family: 'JetBrains Mono', 'Cascadia Mono', 'SF Mono', 'Consolas', monospace;
+}
+
+h3 {
+  font-size: 17px;
+  font-family: 'JetBrains Mono', 'Cascadia Mono', 'SF Mono', 'Consolas', monospace;
+}
+
+h4 {
+  font-size: 15px;
+  font-family: 'JetBrains Mono', 'Cascadia Mono', 'SF Mono', 'Consolas', monospace;
+}
+
+p,
+li,
+button,
+input,
+a {
+  font-size: 14px;
+}
