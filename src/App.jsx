@@ -10,7 +10,7 @@ import WriteupsPage from './pages/WriteupsPage'
 function App() {
   return (
     // Requirement: React JSX - returns JSX describing the app layout.
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="app">
         <Navbar />
         {/* Requirement: React Routing (multiple pages) - Routes/Route switch page components by URL. */}
