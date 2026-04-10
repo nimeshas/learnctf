@@ -1,4 +1,3 @@
-// Requirement: React Props - this data is passed to TopicSidebar and LearnPage.
 const topics = [
   {
     id: 1,

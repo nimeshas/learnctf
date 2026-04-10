@@ -1,21 +1,19 @@
 import { Link } from 'react-router-dom'
 
-// Requirement: React Components - navigation component reused across pages.
 function Navbar() {
   const navStyle = {
     textAlign: 'center',
     padding: '18px 24px',
     borderBottom: '1px solid var(--border-main)',
     backgroundColor: '#0a0c10',
-    position: 'relative',
   }
 
   const brandStyle = {
+    display: 'block',
+    marginBottom: '10px',
     fontWeight: 'bold',
     color: 'var(--accent)',
     fontFamily: "'JetBrains Mono', 'Cascadia Mono', 'SF Mono', 'Consolas', monospace",
-    position: 'absolute',
-    left: '24px',
   }
 
   const linksStyle = {
@@ -32,11 +30,9 @@ function Navbar() {
   }
 
   return (
-    // Requirement: React JSX - returns JSX for the site nav layout.
     <nav style={navStyle}>
       <div style={brandStyle}>$ CTFGuide</div>
       <div style={linksStyle}>
-        {/* Requirement: React Routing (multiple pages) - Link components change routes. */}
         <Link to="/" style={linkStyle}>
           Home
         </Link>

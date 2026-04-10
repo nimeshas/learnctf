@@ -2,9 +2,7 @@ import { useState } from 'react'
 import WriteupCard from '../components/WriteupCard'
 import writeups from '../data/writeups'
 
-// Requirement: React Components - page-level component for writeups.
 function WriteupsPage() {
-  // Requirement: React Hooks (useState) + React State - tracks search input text.
   const [searchText, setSearchText] = useState('')
 
   const cleanText = searchText.toLowerCase()
@@ -24,7 +22,6 @@ function WriteupsPage() {
   }
 
   return (
-    // Requirement: React JSX - JSX layout for the writeups page.
     <div className="page">
       <div className="hero">
         <span className="tag">$ find /writeups -type f | sort</span>
@@ -36,10 +33,7 @@ function WriteupsPage() {
 
       
 
-      <div>
-        {/* Requirement: React Props - passes each writeup object into WriteupCard. */}
-        {writeupCards}
-      </div>
+      <div>{writeupCards}</div>
     </div>
   )
 }

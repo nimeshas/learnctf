@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 
-// Requirement: React Components - reusable card for a single writeup.
 function WriteupCard({ writeup }) {
-  // Requirement: React Hooks (useState) + React State - toggles the extra steps text.
   const [showSteps, setShowSteps] = useState(false)
   const cardStyle = {
     backgroundColor: 'var(--bg-card)',
@@ -11,7 +9,6 @@ function WriteupCard({ writeup }) {
     borderRadius: '10px',
     overflow: 'hidden',
     marginBottom: '12px',
-    transition: 'border-color 0.15s ease',
   }
 
   const headerStyle = {
@@ -52,7 +49,6 @@ function WriteupCard({ writeup }) {
     fontWeight: 'bold',
     cursor: 'pointer',
     color: 'var(--accent)',
-    transition: 'background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease',
   }
 
   const difficultyStyle =
@@ -61,7 +57,6 @@ function WriteupCard({ writeup }) {
       : { color: 'var(--accent)', borderColor: 'var(--accent)' }
 
   return (
-    // Requirement: Styling in React - inline styles used for small, component-local styling.
     <div style={cardStyle}>
       <div style={headerStyle}>
         <h3 style={titleStyle}>$ {writeup.title}</h3>
@@ -91,7 +86,6 @@ function WriteupCard({ writeup }) {
   )
 }
 
-// Requirement: React Props Validation (PropTypes) - validates writeup object fields.
 WriteupCard.propTypes = {
   writeup: PropTypes.shape({
     id: PropTypes.number.isRequired,

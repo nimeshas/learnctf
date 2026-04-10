@@ -1,9 +1,4 @@
 :root {
-  /* Color Code:
-     1) Neutrals: backgrounds, borders, default text.
-     2) Accent: single interactive/highlight color.
-     3) Danger: used only for high difficulty emphasis.
-  */
   --bg-main: #050506;
   --bg-card: #0f1115;
   --bg-header: #2a3442;
@@ -16,7 +11,6 @@
 }
 
 body {
-  /* Requirement: Styling in React - global styling used by JSX-rendered elements. */
   background: var(--bg-main);
   color: var(--text-main);
   margin: 0;
@@ -31,7 +25,6 @@ body {
 }
 
 h1 {
-  /* Heading-only monospace per UI requirement. */
   font-size: 23px;
   font-family: 'JetBrains Mono', 'Cascadia Mono', 'SF Mono', 'Consolas', monospace;
 }

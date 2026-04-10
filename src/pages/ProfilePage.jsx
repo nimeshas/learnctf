@@ -1,13 +1,10 @@
 import { Component } from 'react'
 import StatCard from '../components/StatCard'
 
-// Requirement: At least one class component (with constructor) - ProfilePage is class-based.
 class ProfilePage extends Component {
-  // Requirement: constructor in class component - initializes local state from props.
   constructor(props) {
     super(props)
 
-    // Requirement: React State (class component state) - stores user profile data.
     this.state = {
       user: {
         username: 'ctf_starter',
@@ -20,7 +17,6 @@ class ProfilePage extends Component {
     }
   }
 
-  // Requirement: React Component Lifecycle (componentDidMount) - sets the document title after mount.
   componentDidMount() {
     document.title = 'CTFGuide | Profile'
   }
@@ -33,16 +29,13 @@ class ProfilePage extends Component {
     }
 
     return (
-      // Requirement: React JSX - JSX returned from class component render.
       <div className="page">
-        {/* Requirement: React JSX in class component render method. */}
         <h1 className="title">$ cat profile.txt</h1>
         <p className="accent" style={{ marginBottom: '6px' }}>$ whoami</p>
         <h2 style={{ color: 'var(--text-main)' }}>{user.username}</h2>
         <p>$ {user.bio}</p>
 
         <div className="stat-row">
-          {/* Requirement: React Props (component API usage) - passes label/value props to StatCard. */}
           <StatCard label="Challenges Solved" value={user.solved} />
           <StatCard label="CTFs Attended" value={user.attended} />
           <StatCard label="Writeups Posted" value={user.posted} />

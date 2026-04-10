@@ -1,15 +1,12 @@
 import PropTypes from 'prop-types'
-
-// Requirement: React Components - reusable card component for upcoming CTFs.
 function CTFCard({ ctf }) {
-  // Requirement: React Props - uses the ctf prop to render name/date/format.
+
   const cardStyle = {
     backgroundColor: 'var(--bg-card)',
     border: '1px solid var(--border-main)',
     borderRadius: '10px',
     overflow: 'hidden',
     marginBottom: '12px',
-    transition: 'border-color 0.15s ease',
   }
 
   const headerStyle = {
@@ -31,7 +28,6 @@ function CTFCard({ ctf }) {
   const difficultyColor = ctf.difficulty === 'Hard' ? 'var(--danger)' : 'var(--accent)'
 
   return (
-    // Requirement: React JSX - returns a JSX card layout.
     <div style={cardStyle}>
       <div style={headerStyle}>
         <h3 style={titleStyle}>$ {ctf.name}</h3>
@@ -50,7 +46,6 @@ function CTFCard({ ctf }) {
   )
 }
 
-// Requirement: React Props Validation (PropTypes) - validates the shape of the ctf prop.
 CTFCard.propTypes = {
   ctf: PropTypes.shape({
     id: PropTypes.number.isRequired,

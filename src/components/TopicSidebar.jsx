@@ -1,8 +1,5 @@
 import PropTypes from 'prop-types'
-
-// Requirement: React Components + Component API - uses topics/selectedId/onSelect props.
 function TopicSidebar({ topics, selectedId, onSelect }) {
-  // Requirement: React Props - props control which topic is highlighted and selected.
   const cardStyle = {
     width: '260px',
     backgroundColor: 'var(--bg-card)',
@@ -42,7 +39,6 @@ function TopicSidebar({ topics, selectedId, onSelect }) {
   const topicD = topics && topics[3] ? topics[3] : { id: 4, name: 'Forensics' }
 
   return (
-    // Requirement: React JSX - JSX markup for the sidebar layout.
     <div style={cardStyle}>
       <div style={headerStyle}>
         <h3 style={titleStyle}>$ topics</h3>
@@ -81,7 +77,6 @@ function TopicSidebar({ topics, selectedId, onSelect }) {
   )
 }
 
-// Requirement: React Props Validation (PropTypes) - validates the topics array and handlers.
 TopicSidebar.propTypes = {
   topics: PropTypes.arrayOf(
     PropTypes.shape({

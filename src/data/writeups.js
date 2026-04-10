@@ -1,4 +1,3 @@
-// Requirement: React Props - this data is passed to WriteupCard components.
 const writeups = [
   {
     id: 1,

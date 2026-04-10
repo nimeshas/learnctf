@@ -49,8 +49,6 @@
   overflow: hidden;
   margin-bottom: 12px;
 }
-
-
 .card-head {
   background-color: #171c24;
   border-bottom: 1px solid var(--border-main);
@@ -60,7 +58,6 @@
 .card-title {
   margin: 0;
   color: var(--text-header);
-  font-family: 'JetBrains Mono', 'Cascadia Mono', 'SF Mono', 'Consolas', monospace;
 }
 
 .card-body {
@@ -99,7 +96,6 @@
   color: var(--accent);
 }
 
-/* Requirement: Styling in React - these class selectors are applied via JSX className. */
 .title {
   margin-top: 0;
   color: var(--accent);
@@ -117,7 +113,6 @@
 .hero-title {
   margin: 0;
   color: #f3f4f6;
-  font-family: 'JetBrains Mono', 'Cascadia Mono', 'SF Mono', 'Consolas', monospace;
 }
 
 .hero-text {

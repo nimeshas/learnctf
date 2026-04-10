@@ -1,8 +1,5 @@
 import PropTypes from 'prop-types'
-
-// Requirement: React Components + Component API - label/value props define this card output.
 function StatCard({ label, value }) {
-  // Requirement: React Props - label and value props drive the rendered text.
   const cardStyle = {
     minWidth: '140px',
     textAlign: 'center',
@@ -23,7 +20,6 @@ function StatCard({ label, value }) {
   }
 
   return (
-    // Requirement: React JSX - JSX structure for the stat card.
     <div style={cardStyle}>
       <div style={headerStyle}>
         <div style={{ color: 'var(--text-header)', fontSize: '11px' }}>$ {label}</div>
@@ -35,7 +31,6 @@ function StatCard({ label, value }) {
   )
 }
 
-// Requirement: React Props Validation (PropTypes) - validates label/value prop types.
 StatCard.propTypes = {
   label: PropTypes.string.isRequired,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,

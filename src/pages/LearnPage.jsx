@@ -2,9 +2,7 @@ import { useEffect, useState } from 'react'
 import TopicSidebar from '../components/TopicSidebar'
 import topics from '../data/topics'
 
-// Requirement: React Components - page-level component for learning topics.
 function LearnPage() {
-  // Requirement: React Hooks (useState) + React State - tracks the selected topic id.
   const [selectedId, setSelectedId] = useState(topics[0].id)
 
   let selectedTopic = topics[0]
@@ -19,17 +17,14 @@ function LearnPage() {
     toolsList.push(<li key={selectedTopic.tools[i]}>{selectedTopic.tools[i]}</li>)
   }
 
-  // Requirement: React Hooks (useEffect) - updates document title when selection changes.
   useEffect(() => {
     document.title = `CTFGuide | ${selectedTopic.name}`
   }, [selectedTopic])
 
   return (
-    // Requirement: React JSX - JSX layout for the learn page.
     <div className="page">
       <h1 className="title">$ cd learn/</h1>
       <div className="split">
-        {/* Requirement: React Props - passes data and handler props into TopicSidebar. */}
         <TopicSidebar topics={topics} selectedId={selectedId} onSelect={setSelectedId} />
         <div className="card" style={{ width: '900px', textAlign: 'left' }}>
           <div className="card-head">

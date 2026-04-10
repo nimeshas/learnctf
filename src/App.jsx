@@ -6,14 +6,11 @@ import ProfilePage from './pages/ProfilePage'
 import UpcomingPage from './pages/UpcomingPage'
 import WriteupsPage from './pages/WriteupsPage'
 
-// Requirement: React Components - App is the root component that composes the UI tree.
 function App() {
   return (
-    // Requirement: React JSX - returns JSX describing the app layout.
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="app">
         <Navbar />
-        {/* Requirement: React Routing (multiple pages) - Routes/Route switch page components by URL. */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/learn" element={<LearnPage />} />

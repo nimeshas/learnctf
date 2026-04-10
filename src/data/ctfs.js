@@ -1,4 +1,3 @@
-// Requirement: React Props - this data is passed as props into CTFCard components.
 const ctfs = [
   {
     id: 1,

@@ -1,15 +1,12 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-// Requirement: React Components - page-level component for the Home route.
 function HomePage() {
-  // Requirement: React Hooks (useEffect) - updates document title on mount.
   useEffect(() => {
     document.title = "CTFGuide | Home";
   }, []);
 
   return (
-    // Requirement: React JSX - page layout expressed in JSX.
     <div className="page">
       <div className="hero" style={{ width: '600px', margin: '8px auto 28px' }}>
         <span className="tag">$ welcome</span>
@@ -36,7 +33,6 @@ function HomePage() {
           </div>
           <div className="card-body">
             <p>Read topic basics and small tool examples.</p>
-            {/* Requirement: React Routing (multiple pages) - Link navigates to /learn. */}
             <Link to="/learn" className="btn">
               &gt; learn
             </Link>
@@ -49,7 +45,6 @@ function HomePage() {
           </div>
           <div className="card-body">
             <p>Search beginner-friendly challenge solve notes.</p>
-            {/* Requirement: React Routing (multiple pages) - Link navigates to /writeups. */}
             <Link to="/writeups" className="btn">
               &gt; writeups
             </Link>
@@ -62,7 +57,6 @@ function HomePage() {
           </div>
           <div className="card-body">
             <p>See a short list of upcoming CTF events.</p>
-            {/* Requirement: React Routing (multiple pages) - Link navigates to /upcoming. */}
             <Link to="/upcoming" className="btn">
               &gt; upcoming
             </Link>

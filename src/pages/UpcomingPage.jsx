@@ -1,7 +1,6 @@
 import CTFCard from '../components/CTFCard'
 import ctfs from '../data/ctfs'
 
-// Requirement: React Components - page-level component for upcoming CTFs.
 function UpcomingPage() {
   const ctfCards = []
   for (let i = 0; i < ctfs.length; i += 1) {
@@ -9,7 +8,6 @@ function UpcomingPage() {
   }
 
   return (
-    // Requirement: React JSX - JSX layout for upcoming events page.
     <div className="page">
       <div className="hero">
         <span className="tag">$ find /ctfs -type f | sort</span>
@@ -20,7 +18,6 @@ function UpcomingPage() {
       </div>
 
       <div>
-        {/* Requirement: React Props - passes each ctf object into CTFCard. */}
         {ctfCards}
       </div>
     </div>
